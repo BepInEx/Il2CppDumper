@@ -9,7 +9,7 @@ namespace Il2CppDumper
 {
     public static class DummyAssemblyExporter
     {
-        public static void Export(Il2CppExecutor il2CppExecutor, string outputDir)
+        public static void Export(Il2CppExecutor il2CppExecutor, string outputDir, bool addToken)
         {
 	        string dummyDllPath = Path.Combine(outputDir, "DummyDll");
 
@@ -17,7 +17,7 @@ namespace Il2CppDumper
                 Directory.Delete(dummyDllPath, true);
             Directory.CreateDirectory(dummyDllPath);
 
-            var dummy = new DummyAssemblyGenerator(il2CppExecutor);
+            var dummy = new DummyAssemblyGenerator(il2CppExecutor, addToken);
             foreach (var assembly in dummy.Assemblies)
             {
 	            string path = Path.Combine(dummyDllPath, assembly.MainModule.Name);
