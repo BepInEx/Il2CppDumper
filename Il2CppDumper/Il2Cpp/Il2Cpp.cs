@@ -32,8 +32,9 @@ namespace Il2CppDumper
         public Dictionary<string, Dictionary<uint, Il2CppRGCTXDefinition[]>> rgctxsDictionary;
 
         protected Action<string> reportProgressAction;
-
-        public abstract ulong MapVATR(ulong uiAddr);
+        
+        public abstract ulong MapVATR(ulong addr);
+        public abstract ulong MapRTVA(ulong addr);
         public abstract bool Search();
         public abstract bool PlusSearch(int methodCount, int typeDefinitionsCount, int imageCount);
         public abstract bool SymbolSearch();
