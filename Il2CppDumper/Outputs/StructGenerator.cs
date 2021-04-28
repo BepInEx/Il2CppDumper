@@ -241,7 +241,7 @@ namespace Il2CppDumper
             {
                 orderedRVAPointers[i] = il2Cpp.GetRVA(orderedPointers[i]);
             }
-            json.Addresses = orderedRVAPointers.ToList();
+            json.Addresses = orderedRVAPointers;
             // 处理MetadataUsage
             if (il2Cpp.Version >= 27)
             {
@@ -347,9 +347,9 @@ namespace Il2CppDumper
                 value = x.Value,
                 address = $"0x{x.Address:X}"
             }).ToArray();
-            File.WriteAllText(outputDir + "stringliteral.json", JsonConvert.SerializeObject(stringLiterals, Formatting.Indented), new UTF8Encoding(false));
+            //File.WriteAllText(outputDir + "stringliteral.json", JsonConvert.SerializeObject(stringLiterals, Formatting.Indented), new UTF8Encoding(false));
             //写入文件
-            File.WriteAllText(outputDir + "script.json", JsonConvert.SerializeObject(json, Formatting.Indented));
+            //File.WriteAllText(outputDir + "script.json", JsonConvert.SerializeObject(json, Formatting.Indented));
             //il2cpp.h
             for (int i = 0; i < genericClassList.Count; i++)
             {
