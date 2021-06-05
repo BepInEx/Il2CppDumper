@@ -4,16 +4,14 @@
     <PackageId>Il2CppDumper</PackageId>
     <Authors>Perfare</Authors>
     <OutputType>Library</OutputType>
-    <TargetFramework>netstandard2</TargetFramework>
-    <Version>6.6.2</Version>
-    <AssemblyVersion>6.6.2.0</AssemblyVersion>
-    <FileVersion>6.6.2.0</FileVersion>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>6.6.3</Version>
     <Copyright>Copyright © Perfare 2016-2021</Copyright>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Mono.Cecil" Version="0.11.2" />
+    <PackageReference Include="Mono.Cecil" Version="0.11.3" />
   </ItemGroup>
 
   <ItemGroup>
