@@ -5,7 +5,7 @@
     <Authors>Perfare</Authors>
     <OutputType>Library</OutputType>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>6.6.3</Version>
+    <Version>6.6.4</Version>
     <Copyright>Copyright © Perfare 2016-2021</Copyright>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>

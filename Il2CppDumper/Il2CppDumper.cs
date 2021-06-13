@@ -34,7 +34,7 @@ namespace Il2CppDumper
 	        return true;
         }
 
-        private static void Init(string il2cppPath,
+        public static void Init(string il2cppPath,
                                  string metadataPath,
                                  Config config,
                                  Action<string> reportProgressAction,
